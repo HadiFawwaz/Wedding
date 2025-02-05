@@ -416,7 +416,7 @@
 
         function disableScroll(){
           scroollTop = window.pageYOffset | document.documentElement.scrollTop;
-          scroollTop = window.pageXOffset | document.documentElement.scrollLeft;
+          scroollLeft = window.pageXOffset | document.documentElement.scrollLeft;
           let isPlaying = false;
           
           window.onscroll = function() {
@@ -429,7 +429,7 @@
         }
 
         function enableScroll(){
-          window.onscroll = function() { }
+          window.onscroll = function() { };
           rootElement.style.scrollBehavior = 'smooth';
           // localStorage.setItem('opened', 'true')
           playAudio();
@@ -461,7 +461,7 @@
         //  
         // }
          // disableScroll();
-        disableScroll();
+        disableScroll(); {};
       </script>
       <script>
         window.addEventListener("load", function() {
